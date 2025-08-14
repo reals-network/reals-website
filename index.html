@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reals Network - Premium Minecraft PvP Server</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="https://media.discordapp.net/attachments/1197227721584033864/1402366818869448744/logo_mejor-5.png?ex=689edc20&is=689d8aa0&hm=4202bca926b1c97128dd7a1a1cf32f1d360979b38abb50103936c306d0b6c17c&=&format=webp&quality=lossless&width=856&height=856" alt="Reals Network Logo" class="logo-img">
+                <span class="logo-text">Reals Network</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#stats" class="nav-link">Stats</a>
+                <a href="#shop" class="nav-link">Shop</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Welcome to <span class="highlight">Reals Network</span></h1>
+                <p class="hero-subtitle">The ultimate Minecraft PvP experience awaits you</p>
+                <div class="server-info">
+                    <div class="server-ip">
+                        <i class="fas fa-server"></i>
+                        <span>reals.lat</span>
+                        <button class="copy-btn" onclick="copyIP()">
+                            <i class="fas fa-copy"></i>
+                        </button>
+                    </div>
+                    <div class="server-status">
+                        <span class="status-dot online"></span>
+                        <span id="player-count">Loading...</span>
+                    </div>
+                    <div class="server-version" id="server-version" style="display: none;">
+                        <i class="fas fa-cube"></i>
+                        <span id="version-text">Loading version...</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">Join Now</button>
+                    <a href="https://discord.reals.lat" class="btn btn-secondary" target="_blank">Discord</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Why Choose Reals Network?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-sword"></i>
+                    </div>
+                    <h3>Epic PvP Combat</h3>
+                    <p>Experience intense battles with our custom combat system and balanced gameplay mechanics.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Competitive Rankings</h3>
+                    <p>Climb the leaderboards and prove you're the best warrior in the realm.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Active Community</h3>
+                    <p>Join thousands of players in our thriving community with regular events and tournaments.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cog"></i>
+                    </div>
+                    <h3>Custom Features</h3>
+                    <p>Unique plugins and modifications that enhance your Minecraft experience.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Anti-Cheat Protection</h3>
+                    <p>Advanced anti-cheat systems ensure fair play for everyone.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>High Performance</h3>
+                    <p>Lag-free gameplay with our premium server hardware and optimization.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats">
+        <div class="container">
+            <h2 class="section-title">Server Statistics</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number" data-target="15000">0</div>
+                    <div class="stat-label">Total Players</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="500">0</div>
+                    <div class="stat-label">Online Now</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="1000000">0</div>
+                    <div class="stat-label">Total Kills</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="50">0</div>
+                    <div class="stat-label">Daily Events</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop Section -->
+    <section id="shop" class="shop">
+        <div class="container">
+            <h2 class="section-title">Support the Server</h2>
+            <div class="shop-grid">
+                <div class="rank-card">
+                    <div class="rank-header">
+                        <h3>VIP</h3>
+                        <div class="price">$9.99</div>
+                    </div>
+                    <ul class="rank-features">
+                        <li><i class="fas fa-check"></i> Colored Chat</li>
+                        <li><i class="fas fa-check"></i> VIP Kit</li>
+                        <li><i class="fas fa-check"></i> Priority Queue</li>
+                        <li><i class="fas fa-check"></i> Exclusive Commands</li>
+                    </ul>
+                    <a href="https://store.reals.lat" class="btn btn-primary" target="_blank">Purchase</a>
+                </div>
+                <div class="rank-card featured">
+                    <div class="rank-header">
+                        <h3>MVP</h3>
+                        <div class="price">$19.99</div>
+                    </div>
+                    <ul class="rank-features">
+                        <li><i class="fas fa-check"></i> All VIP Features</li>
+                        <li><i class="fas fa-check"></i> MVP Kit</li>
+                        <li><i class="fas fa-check"></i> Disguise Plugin</li>
+                        <li><i class="fas fa-check"></i> Fly in Lobby</li>
+                        <li><i class="fas fa-check"></i> Pet Companion</li>
+                    </ul>
+                    <a href="https://store.reals.lat" class="btn btn-primary" target="_blank">Purchase</a>
+                </div>
+                <div class="rank-card">
+                    <div class="rank-header">
+                        <h3>ELITE</h3>
+                        <div class="price">$39.99</div>
+                    </div>
+                    <ul class="rank-features">
+                        <li><i class="fas fa-check"></i> All MVP Features</li>
+                        <li><i class="fas fa-check"></i> Elite Kit</li>
+                        <li><i class="fas fa-check"></i> Custom Particles</li>
+                        <li><i class="fas fa-check"></i> Exclusive Maps</li>
+                        <li><i class="fas fa-check"></i> Special Events Access</li>
+                    </ul>
+                    <a href="https://store.reals.lat" class="btn btn-primary" target="_blank">Purchase</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fab fa-discord"></i>
+                        <div>
+                            <h4>Discord Server</h4>
+                            <p>Join our community discord</p>
+                            <a href="https://discord.reals.lat" class="contact-link" target="_blank">discord.reals.lat</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email Support</h4>
+                            <p>Contact our support team</p>
+                            <a href="mailto:support@reals.lat" class="contact-link">support@reals.lat</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-twitter"></i>
+                        <div>
+                            <h4>Twitter</h4>
+                            <p>Follow us for updates</p>
+                            <a href="https://twitter.com/realsuhc" class="contact-link" target="_blank">@realsuhc</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="https://twitter.com/realsuhc" class="social-link" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="https://media.discordapp.net/attachments/1197227721584033864/1402366818869448744/logo_mejor-5.png?ex=689edc20&is=689d8aa0&hm=4202bca926b1c97128dd7a1a1cf32f1d360979b38abb50103936c306d0b6c17c&=&format=webp&quality=lossless&width=856&height=856" alt="Reals Network">
+                    <span>Reals Network</span>
+                </div>
+                <div class="footer-text">
+                    <p>&copy; 2025 Reals Network. All rights reserved.</p>
+                    <p>Not affiliated with Mojang Studios or Microsoft.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
